@@ -1,17 +1,17 @@
 :root {
-  /* Quiet Editorial — meteor grey, dark mode */
-  --paper: #2c2f36;
-  --paper-top: #32353d;
-  --paper-bottom: #272a30;
-  --paper-soft: #3a3d45;
-  --paper-deep: #1f2127;
-  --ink: #e8eaed;
-  --ink-soft: #c8ccd1;
-  --muted: #a4aab0;
-  --muted-soft: #80848a;
-  --rule: #3d4047;
-  --rule-strong: #525660;
-  --accent: #c8ccd1;
+  /* Quiet Editorial — warm white */
+  --paper: #ffffff;
+  --paper-top: #ffffff;
+  --paper-bottom: #f8f8f6;
+  --paper-soft: #f3f3f0;
+  --paper-deep: #e8e8e3;
+  --ink: #20211f;
+  --ink-soft: #4f504c;
+  --muted: #72736d;
+  --muted-soft: #96978f;
+  --rule: #deded8;
+  --rule-strong: #c8c8c1;
+  --accent: #20211f;
 
   /* Typography */
   --font-display:
@@ -56,11 +56,7 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--paper);
-  background-image: linear-gradient(
-    180deg,
-    var(--paper-top) 0%,
-    var(--paper-bottom) 100%
-  );
+  background-image: linear-gradient(180deg, var(--paper-top) 0%, var(--paper-bottom) 100%);
   background-attachment: fixed;
   color: var(--ink);
   line-height: 1.7;
@@ -134,7 +130,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(50, 53, 61, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--rule);
