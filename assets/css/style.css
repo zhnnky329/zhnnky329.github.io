@@ -77,52 +77,6 @@ a {
   color: var(--paper);
 }
 
-/* Loader */
-.loader {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--paper);
-  z-index: 200;
-  transition: opacity 240ms var(--ease), visibility 240ms var(--ease);
-}
-
-.loader.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader-content {
-  text-align: center;
-}
-
-.loader-spinner {
-  width: 26px;
-  height: 26px;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 1px solid var(--rule);
-  border-top-color: var(--ink);
-  animation: spin 0.9s linear infinite;
-}
-
-.loader-text {
-  margin-top: 14px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Top navigation */
 .top-nav {
   position: fixed;
@@ -702,16 +656,6 @@ a {
   font-size: 15px;
   line-height: 1.6;
   color: var(--ink-soft);
-}
-
-/* Publications */
-.publications-content {
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--muted);
-  font-style: italic;
-  padding: 0;
 }
 
 /* Projects — hairline divided list */

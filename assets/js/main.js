@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     initBackToTopButton();
     updateNavigationOnScroll();
     updateBackToTopButtonVisibility();
-    hideLoading();
 
     function getNavOffset() {
         return topNav ? topNav.offsetHeight + 14 : 0;
@@ -109,30 +108,4 @@ document.addEventListener('DOMContentLoaded', function () {
             backToTopButton.classList.remove('is-visible');
         }
     }
-
-    function hideLoading() {
-        window.setTimeout(function () {
-            const loader = document.getElementById('loader');
-            if (!loader) {
-                return;
-            }
-
-            loader.classList.add('is-hidden');
-            window.setTimeout(function () {
-                loader.style.display = 'none';
-            }, 260);
-        }, 300);
-    }
-});
-
-window.addEventListener('load', function () {
-    const loader = document.getElementById('loader');
-    if (!loader) {
-        return;
-    }
-
-    loader.classList.add('is-hidden');
-    window.setTimeout(function () {
-        loader.style.display = 'none';
-    }, 260);
 });
